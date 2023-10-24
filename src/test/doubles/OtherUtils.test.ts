@@ -1,11 +1,7 @@
-import {
-  OtherStringUtils,
-  calculateComplexity,
-  toUpperCaseWithCb,
-} from '../../app/doubles/OtherUtils'
+import { OtherStringUtils, calculateComplexity, toUpperCaseWithCb } from '../../app/doubles/OtherUtils'
 
 describe('OtherUtils test suite', () => {
-  describe.only('OtherStringUtils tests with spies', () => {
+  describe('OtherStringUtils tests with spies', () => {
     let sut: OtherStringUtils
 
     beforeEach(() => {
@@ -32,7 +28,7 @@ describe('OtherUtils test suite', () => {
     })
   })
 
-  describe.only('Tracking callbacks with Jest mocks', () => {
+  describe('Tracking callbacks with Jest mocks', () => {
     const callBackMock = jest.fn()
 
     afterEach(() => {
